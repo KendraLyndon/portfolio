@@ -4,7 +4,7 @@ app.factory('ProjectService', function(){
       {
         name: 'Coffee Snob',
         image: '../images/coffee-snob-map.png',
-        tech: 'Node.js / Express / Jade / PostgreSQL / Google Maps API / custom CSS',
+        tech: 'Node.js  /  Express  /  Jade  /  PostgreSQL  /  Google Maps API  /  custom CSS',
         liveLink: 'http://coffeesnob-kl.herokuapp.com/',
         gitHub: 'https://github.com/KendraLyndon/Coffee-Snob',
         blurb: 'Use Coffee Snob to search cities for local cafes. '+
@@ -14,7 +14,7 @@ app.factory('ProjectService', function(){
       {
         name: 'FRM',
         image: '../images/FRM-screenshot.png',
-        tech: 'React / Node.js / Express / PostgreSQL',
+        tech: 'React  /  Node.js  /  Express /  PostgreSQL',
         liveLink: null,
         gitHub: 'https://github.com/KendraLyndon/FRM',
         blurb: 'Manage your personal relationships with FRM. This site enables '+
@@ -24,7 +24,7 @@ app.factory('ProjectService', function(){
       {
         name: 'Shoptacular',
         image: '../images/shoptacular-screenshot.png',
-        tech: 'AngularJS / BootstrapCSS',
+        tech: 'AngularJS  /  BootstrapCSS',
         liveLink: 'https://shopify-fdcbf.firebaseapp.com/',
         gitHub: 'https://github.com/KendraLyndon/MEANtea',
         blurb: 'With Shoptacular, users can browse various teas for sale, '+

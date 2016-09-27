@@ -53,6 +53,7 @@
   margin-bottom: 15px;
 }
 
+
 .project-link {
   text-decoration: none;
 
@@ -60,5 +61,16 @@
     width: 30px;
     height: 30px;
     margin-right: 8px;
+  }
+}
+
+@media (max-width:1200px){
+  .projects-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-div{
+    margin-top: 40px;
   }
 }
