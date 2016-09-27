@@ -1,0 +1,23 @@
+<div class="sub-title-container">
+  <a class="anchor" name="projects"></a>
+  <h2 class="sub-title projects-title">Projects</h2>
+  <div class="section-line"></div>
+</div>
+<div class="projects-container">
+  <div ng-repeat="project in vw.projects" class="{{project.name}} project-div">
+    <h3 class="title">{{project.name}}</h3>
+    <img class="project-image" src={{project.image}} />
+    <p class="tech">
+      {{project.tech}}
+    </p>
+    <p class="blurb">
+      {{project.blurb}}
+    </p>
+    <a class="project-link" href={{project.liveLink}}>
+      <img class="icon" src="../images/earth.svg" />
+    </a>
+    <a class="project-link" href={{project.gitHub}}>
+      <img class="icon" src="../images/github-logo.svg" />
+    </a>
+  </div>
+</div>

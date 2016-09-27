@@ -1,0 +1,28 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $med-blue;
+  height: 90vh;
+}
+
+.home-title {
+ font-size: 130px;
+ font-family: $font-fancy;
+ margin-top: -50px;
+ color: $off-white;
+ text-align: center;
+}
+
+.home-sub-title {
+margin-top: 25px;
+font-size: 45px;
+color: $dark-grey;
+}
+
+@media (max-width:1150px){
+  .home-title {
+    font-size: 90px;
+  }
+}

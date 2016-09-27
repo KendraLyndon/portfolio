@@ -1,0 +1,140 @@
+/*
+med blue: #5A76E8
+dark grey: #303438
+med grey: #43494F
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Quicksand';
+}
+
+main {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  background: rgba(90, 118, 232, 0.9);
+  position: fixed;
+  top: 0;
+}
+
+.anchor {
+  position: absolute;
+  top: 0;
+}
+
+.initials {
+  font-size: 40px;
+  position: absolute;
+  top: 13px;
+  left: 18px;
+  text-decoration: none;
+  color: #303438;
+  font-family: 'Petit Formal Script';
+}
+
+nav {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+nav > a {
+  color: #303438;
+  text-decoration: none;
+  font-family: 'Petit Formal Script';
+  font-size: 30px;
+  margin-left: 18px;
+}
+
+.about, .projects, .skills, .contact {
+  width: 100%;
+  min-height: 90vh;
+  background-color: #43494F;
+  color: #f0f0f0;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #5A76E8;
+}
+
+ .home-title {
+   font-size: 130px;
+   font-family: 'Petit Formal Script';
+   margin-top: -50px;
+   color: #f0f0f0;
+ }
+
+.home-sub-title {
+  margin-top: 40px;
+  font-size: 30px;
+}
+
+.sub-title {
+  width: 100%;
+  text-align: center;
+  font-size: 100px;
+  clear: both;
+  font-family: 'Petit Formal Script';
+}
+
+.about-text-container {
+  float: right;
+  width: 60%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.about-text {
+  width: 700px;
+  margin-bottom: 100px;
+  margin-right: 50px;
+  line-height: 1.5em;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.projects {
+
+}
+
+.coffee-snob-img {
+  width: 650px;
+  height: 400px;
+}
+
+.skills {
+}
+
+.contact {
+
+}
+
+.linkedin, .github, .email {
+  width: 25px;
+  height: 25px;
+}
+
+ footer {
+   width: 100%;
+   height: 5vh;
+   background-color: #43494F;
+ }
+
+@media (max-width:600px){
+  nav > a {
+    display: none;
+  }
+}

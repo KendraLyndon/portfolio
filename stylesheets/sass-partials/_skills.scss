@@ -1,0 +1,21 @@
+.tech-skills-container {
+  width: 95vw;
+  margin: 12vh auto 0 auto;
+  padding-bottom: 8vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.list {
+  font-size: 25px;
+  color: $salmon;
+  li {
+    font-size: 18px;
+    margin-bottom: 8px;
+    list-style: none;
+    &:first-child {
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.about-text-container {
+  width: 70%;
+  margin: 12vh auto 0 auto;
+  padding-bottom: 8vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.profile-pic {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+.about-text {
+  width: 700px;
+  margin-right: 50px;
+  line-height: 1.5em;
+  font-size: 20px;
+  text-align: justify;
+}

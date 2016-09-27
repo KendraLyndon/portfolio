@@ -1,0 +1,23 @@
+.contact-main {
+  margin: 12vh auto 0 auto;
+  padding-bottom: 8vh;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px;
+
+  img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
+  p {
+    font-size: 18px;
+  }
+}

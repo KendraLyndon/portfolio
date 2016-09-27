@@ -1,0 +1,126 @@
+$med-blue: #5A76E8;
+$bright-blue: #6382FF;
+$dark-grey: #2D3136;
+$med-grey: #383D42;
+$off-white: #f0f0f0;
+$salmon: #FF606F;
+$font-basic: 'Source Sans Pro';
+$font-fancy: 'Petit Formal Script';
+
+@import 'sass-partials/home';
+@import 'sass-partials/about';
+@import 'sass-partials/projects';
+@import 'sass-partials/skills';
+@import 'sass-partials/contact';
+@import 'sass-partials/animations';
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: $font-basic;
+  color: $off-white;
+}
+
+main {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  background: rgba(90, 118, 232, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .initials {
+    font-size: 45px;
+    text-decoration: none;
+    color: $dark-grey;
+    font-family: $font-basic;
+    margin-left: 50px;
+    margin-right: 35px;
+  }
+}
+
+nav {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  a {
+    color: $dark-grey;
+    text-decoration: none;
+    font-family: $font-fancy;
+    font-size: 30px;
+    margin-left: 30px;
+  }
+}
+
+section {
+  width: 100%;
+  background-color: $med-grey;
+  color: $dark-grey;
+}
+
+.section-line {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1px;
+  background-color: $off-white;
+  margin-top: 25px;
+}
+
+.sub-title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.anchor {
+  padding-top: 65px;
+}
+
+.sub-title {
+  width: 100%;
+  text-align: center;
+  font-size: 90px;
+  color: $bright-blue;
+  font-family: $font-fancy;
+}
+
+.scroll-bar {
+  width: 100%;
+  height: 70px;
+  background-color: $med-grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  clear: both;
+
+  .scroll-down {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.scroll-bar-blue {
+  background-color: $med-blue;
+}
+
+ footer {
+   width: 100%;
+   height: 5vh;
+   background-color: $med-blue;
+ }
+
+@media (max-width:615px){
+  nav > a:not(.initials) {
+    display: none;
+  }
+}
