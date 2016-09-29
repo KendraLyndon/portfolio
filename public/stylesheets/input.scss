@@ -2,6 +2,7 @@ $med-blue: #5A76E8;
 $bright-blue: #6382FF;
 $dark-grey: #2D3136;
 $med-grey: #383D42;
+$med-grey: #41474C;
 $off-white: #f0f0f0;
 $salmon: #FF606F;
 $font-basic: 'Source Sans Pro';
@@ -40,9 +41,13 @@ header {
     font-size: 45px;
     text-decoration: none;
     color: $dark-grey;
+    background-color: $off-white;
     font-family: $font-basic;
     margin-left: 50px;
     margin-right: 35px;
+    border-radius: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
 

@@ -177,9 +177,13 @@ header {
     font-size: 45px;
     text-decoration: none;
     color: #2D3136;
+    background-color: #f0f0f0;
     font-family: "Source Sans Pro";
     margin-left: 50px;
-    margin-right: 35px; }
+    margin-right: 35px;
+    border-radius: 50%;
+    padding-left: 12px;
+    padding-right: 12px; }
 
 nav {
   position: relative;
@@ -194,7 +198,7 @@ nav {
 
 section {
   width: 100%;
-  background-color: #383D42;
+  background-color: #41474C;
   color: #2D3136; }
 
 .section-line {
@@ -222,7 +226,7 @@ section {
 .scroll-bar {
   width: 100%;
   height: 70px;
-  background-color: #383D42;
+  background-color: #41474C;
   display: flex;
   flex-direction: column;
   justify-content: center;
