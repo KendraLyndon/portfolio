@@ -118,8 +118,13 @@ section {
    background-color: $med-blue;
  }
 
-@media (max-width:615px){
+@media (max-width:680px){
   nav > a:not(.initials) {
     display: none;
+  }
+}
+@media (max-height:500px){
+  header {
+    height: 70px;
   }
 }
