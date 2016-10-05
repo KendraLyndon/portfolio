@@ -13,7 +13,7 @@
     <p class="blurb">
       {{project.blurb}}
     </p>
-    <a class="project-link" href={{project.liveLink}}>
+    <a ng-show="project.liveLink != null" class="project-link" href={{project.liveLink}}>
       <img class="icon" src="../images/earth.svg" />
     </a>
     <a class="project-link" href={{project.gitHub}}>
