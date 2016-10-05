@@ -7,8 +7,8 @@ app.factory('ProjectService', function(){
         tech: 'Node.js  /  Express  /  Jade  /  PostgreSQL  /  Google Maps API  /  custom CSS',
         liveLink: 'http://coffeesnob-kl.herokuapp.com/',
         gitHub: 'https://github.com/KendraLyndon/Coffee-Snob',
-        blurb: 'Enables users to search cities for local cafes and save their '+
-               'favorite coffee shops'
+        blurb: 'Web-based app where users can find local coffee shops '+
+        'in their city and save their favorite cafes to their account'
       },
       {
         name: 'FRM',
@@ -17,7 +17,8 @@ app.factory('ProjectService', function(){
         liveLink: null,
         gitHub: 'https://github.com/KendraLyndon/FRM',
         blurb: 'Manages personal relationships through reminders '+
-               'and shareable lists'
+               'and shareable lists - work in progress, code available '+
+               'on github'
       },
       {
         name: 'Shoptacular',
