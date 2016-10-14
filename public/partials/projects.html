@@ -4,20 +4,25 @@
   <div class="section-line"></div>
 </div>
 <div class="projects-container">
-  <div ng-repeat="project in vw.projects" class="{{project.name}} project-div">
+  <div ng-repeat="project in vw.projects" ng-class="{'first':$first}" class="{{project.name}} project-div">
     <h3 class="title">{{project.name}}</h3>
-    <img class="project-image" src={{project.image}} />
-    <p class="tech">
-      {{project.tech}}
-    </p>
+    <div class="image-container">
+      <img ng-repeat="image in project.images" class="project-image" src={{image}} />
+    </div>
+    <iframe ng-show="project.video != null" src="https://www.youtube.com/embed/rJhstTNNCgM" frameborder="0" allowfullscreen></iframe>
+    <div class="tech-links-container">
+      <p class="tech">
+        {{project.tech}}
+      </p>
+      <a ng-show="project.liveLink != null" class="project-link" href={{project.liveLink}}>
+        <img class="icon" src="../images/earth.svg" />
+      </a>
+      <a class="project-link" href={{project.gitHub}}>
+        <img class="icon" src="../images/github-logo.svg" />
+      </a>
+    </div>
     <p class="blurb">
       {{project.blurb}}
     </p>
-    <a ng-show="project.liveLink != null" class="project-link" href={{project.liveLink}}>
-      <img class="icon" src="../images/earth.svg" />
-    </a>
-    <a class="project-link" href={{project.gitHub}}>
-      <img class="icon" src="../images/github-logo.svg" />
-    </a>
   </div>
 </div>
