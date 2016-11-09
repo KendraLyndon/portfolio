@@ -3,15 +3,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $med-blue;
+  background-color: $off-white;
   height: 90vh;
 }
 
 .home-title {
- font-size: 130px;
+ font-size: 110px;
  font-family: $font-fancy;
- margin-top: -50px;
- color: $off-white;
+ margin-top: 45px;
+ color: $maroon;
  text-align: center;
 }
 
@@ -21,8 +21,18 @@ font-size: 45px;
 color: $dark-grey;
 }
 
-@media (max-width:1150px){
+@media (max-width:1200px){
   .home-title {
     font-size: 90px;
+  }
+}
+
+@media (max-width:600px){
+  .home-title {
+    font-size: 70px;
+  }
+  .home-sub-title {
+  font-size: 30px;
+  color: $dark-grey;
   }
 }

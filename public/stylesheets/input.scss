@@ -3,10 +3,11 @@ $bright-blue: #6382FF;
 $dark-grey: #2D3136;
 $med-grey: #383D42;
 $med-grey: #41474C;
-$off-white: #f0f0f0;
+$off-white: #eeeeee;
 $salmon: #FF606F;
+$maroon: #A64D79;
 $font-basic: 'Source Sans Pro';
-$font-fancy: 'Petit Formal Script';
+$font-fancy: 'Syncopate';
 
 @import 'sass-partials/home';
 @import 'sass-partials/about';
@@ -18,7 +19,7 @@ $font-fancy: 'Petit Formal Script';
   padding: 0;
   margin: 0;
   font-family: $font-basic;
-  color: $off-white;
+  color: $dark-grey;
 }
 
 main {
@@ -28,7 +29,8 @@ main {
 header {
   width: 100%;
   height: 10vh;
-  background: rgba(90, 118, 232, 0.9);
+  background: $off-white;
+  // background: rgba(90, 118, 232, 0.9);
   position: fixed;
   top: 0;
   z-index: 10;
@@ -38,16 +40,15 @@ header {
   align-items: center;
 
   .initials {
-    font-size: 45px;
+    font-size: 40px;
     text-decoration: none;
-    color: $dark-grey;
-    background-color: $off-white;
-    font-family: $font-basic;
-    margin-left: 50px;
-    margin-right: 35px;
-    border-radius: 50%;
-    padding-left: 12px;
-    padding-right: 12px;
+    color: $maroon;
+    // background-color: $off-white;
+    font-family: $font-fancy;
+    margin-left: 60px;
+    margin-right: 45px;
+    // border-radius: 50%;
+    // padding: 12px;
   }
 }
 
@@ -59,7 +60,7 @@ nav {
   a {
     color: $dark-grey;
     text-decoration: none;
-    font-family: $font-fancy;
+    font-family: $font-basic;
     font-size: 30px;
     margin-left: 30px;
   }
@@ -67,7 +68,7 @@ nav {
 
 section {
   width: 100%;
-  background-color: $med-grey;
+  background-color: $off-white;
   color: $dark-grey;
 }
 
@@ -93,7 +94,7 @@ section {
   width: 100%;
   text-align: center;
   font-size: 90px;
-  color: $bright-blue;
+  color: $maroon;
   font-family: $font-fancy;
 }
 
@@ -114,7 +115,7 @@ section {
 }
 
 .scroll-bar-blue {
-  background-color: $med-blue;
+  background-color: $off-white;
 }
 
  footer {
