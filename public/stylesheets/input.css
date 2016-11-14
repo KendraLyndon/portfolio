@@ -19,6 +19,7 @@
 .home-sub-title {
   margin-top: 25px;
   font-size: 45px;
+  font-weight: lighter;
   color: #2D3136; }
 
 @media (max-width: 1200px) {
