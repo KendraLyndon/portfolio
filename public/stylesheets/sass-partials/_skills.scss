@@ -1,18 +1,14 @@
-// .skills {
-//   background-color: $off-white;
-// }
-
 .tech-skills-container {
-  width: 95vw;
-  margin: 12vh auto 0 auto;
-  padding-bottom: 6vh;
+  width: 72vw;
+  margin: 10vh auto 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
 .list {
-  font-size: 25px;
+  font-size: 22px;
+  font-family: $font-fancy;
   color: $maroon;
   li {
     font-size: 18px;
@@ -21,5 +17,27 @@
     &:first-child {
       margin-top: 20px;
     }
+  }
+}
+
+@media (max-width:700px){
+  .tech-skills-container {
+    margin-top: 5vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  ul {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width:900px){
+  .tech-skills-container {
+      width: 90vw;
   }
 }

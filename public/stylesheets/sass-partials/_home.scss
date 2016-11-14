@@ -8,11 +8,14 @@
 }
 
 .home-title {
- font-size: 110px;
+ font-size: 100px;
  font-family: $font-fancy;
  margin-top: 45px;
  color: $maroon;
  text-align: center;
+ display: inline;
+ margin-left: 25px;
+ margin-right: 25px;
 }
 
 .home-sub-title {
@@ -23,12 +26,20 @@ color: $dark-grey;
 
 @media (max-width:1200px){
   .home-title {
-    font-size: 90px;
+    font-size: 80px;
   }
 }
 
-@media (max-width:600px){
+@media (max-width:1050px){
   .home-title {
+    font-size: 70px;
+  }
+}
+
+@media (max-width:825px){
+  .home-title {
+    display: block;
+    margin: 0 auto 0 auto;
     font-size: 70px;
   }
   .home-sub-title {

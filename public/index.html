@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Kendra Lyndon</title>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200|Petit+Formal+Script|Syncopate" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,600|Syncopate" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/input.css" />
     <base href='/' />
   </head>
@@ -11,7 +11,7 @@
     <nav>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
-      <a href="#home" class="initials">kl</a>
+      <a class="initials-link" href="#home"><img class="initials" src="../images/kl.svg"/></a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -19,7 +19,7 @@
   <body>
     <section ui-view="home" class="home"></section>
     <div class="scroll-bar scroll-bar-blue">
-      <a href="#projects"><img class="scroll-down" src="../images/drop-down-grey.svg" /></a>
+      <a href="#projects"><img class="scroll-down" src="../images/down-arrow.svg" /></a>
     </div>
     <section ui-view="projects" class="projects"></section>
     <section ui-view="skills" class="skills"></section>
@@ -30,6 +30,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+    <script src="https://use.fontawesome.com/b39f9da9e1.js"></script>
     <script src='app.js'></script>
     <script src="factories/project_factory.js"></script>
     <script src='controllers/projects.js'></script>

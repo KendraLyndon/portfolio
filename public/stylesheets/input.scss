@@ -1,13 +1,9 @@
-$med-blue: #5A76E8;
-$bright-blue: #6382FF;
 $dark-grey: #2D3136;
-$med-grey: #383D42;
 $med-grey: #41474C;
-$off-white: #eeeeee;
-$salmon: #FF606F;
+$off-white: #ffffff;
 $maroon: #A64D79;
 $font-basic: 'Source Sans Pro';
-$font-fancy: 'Syncopate';
+$font-fancy: 'Syncopate', sans-serif;
 
 @import 'sass-partials/home';
 @import 'sass-partials/about';
@@ -30,39 +26,42 @@ header {
   width: 100%;
   height: 10vh;
   background: $off-white;
-  // background: rgba(90, 118, 232, 0.9);
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 300;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
 
-  .initials {
-    font-size: 40px;
-    text-decoration: none;
-    color: $maroon;
-    // background-color: $off-white;
-    font-family: $font-fancy;
-    margin-left: 60px;
-    margin-right: 45px;
-    // border-radius: 50%;
-    // padding: 12px;
-  }
+.initials {
+  height: 80px;
+  width: 80px;
+  margin: 8px 45px 0 45px;
 }
 
 nav {
+  width: 100%;
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 
   a {
     color: $dark-grey;
     text-decoration: none;
     font-family: $font-basic;
     font-size: 30px;
-    margin-left: 30px;
+    margin: 0 23px 0 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -72,30 +71,29 @@ section {
   color: $dark-grey;
 }
 
-.section-line {
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-  height: 1px;
-  background-color: $off-white;
-  margin-top: 25px;
-}
-
 .sub-title-container {
   display: flex;
   flex-direction: column;
 }
 
 .anchor {
-  padding-top: 65px;
+  padding-top: 85px;
 }
 
 .sub-title {
   width: 100%;
   text-align: center;
-  font-size: 90px;
+  font-size: 70px;
   color: $maroon;
   font-family: $font-fancy;
+  font-weight: lighter;
+}
+
+hr {
+  width: 40%;
+  margin: 0 auto 0 auto;
+  height: 1px;
+  background-color: $med-grey;
 }
 
 .scroll-bar {
@@ -121,12 +119,17 @@ section {
  footer {
    width: 100%;
    height: 5vh;
-   background-color: $med-blue;
  }
 
 @media (max-width:680px){
-  nav > a:not(.initials) {
+  nav > a:not(.initials-link) {
     display: none;
+  }
+  hr {
+    width: 325px;
+  }
+  .sub-title {
+    font-size: 53px;
   }
 }
 @media (max-height:500px){
