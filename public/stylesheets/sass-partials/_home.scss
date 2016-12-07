@@ -48,3 +48,15 @@ color: $dark-grey;
   color: $dark-grey;
   }
 }
+
+@media (max-width:500px){
+  .home-title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width:320px){
+  .home-title {
+    font-size: 50px;
+  }
+}

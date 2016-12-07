@@ -18,7 +18,7 @@ app.factory('ProjectService', function(){
         name: 'CoffeeSnob',
         images: ['../images/coffee-snob-scrnsht.png'],
         video: null,
-        tech: 'Node.js  |  Express  |  Jade  |  PostgreSQL  |  Google Maps API',
+        tech: 'Node.js  |  Express  |  Jade  |  PostgreSQL  |  Google Maps',
         liveLink: 'http://coffeesnob-kl.herokuapp.com/',
         gitHub: 'https://github.com/KendraLyndon/Coffee-Snob',
         blurb: 'Web-based app where users can find local coffee shops '+

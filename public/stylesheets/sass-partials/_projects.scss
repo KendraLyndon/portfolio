@@ -124,7 +124,11 @@
   .project-div{
     margin-top: 40px;
   }
-
+  .first {
+    .project-info {
+      margin-top: 20px;
+    }
+  }
 }
 
 @media (max-width:670px){
@@ -137,29 +141,46 @@
 }
 
 @media (max-width:560px){
-  .title, .blurb, .tech {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+  .title, .project-link, .tech {
+    padding-left: 5px !important;
+  }
+  .blurb {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
   }
   .title {
     font-size: 25px;
   }
   .blurb {
     font-size: 15px;
+    margin: 10px 0 5px;
   }
   .tech {
-    font-size: 13px;
+    font-size: 14px;
+    margin-bottom: 5px;
   }
-  .project-link {
-    padding-left: 10px !important;
+  .first {
+    .project-info {
+      width: 90%;
+      margin-left: 0;
+    }
   }
   .project-info {
-    width: 84%;
+    width: 85%;
+    padding: 15px 10px 10px 10px;
+  }
+  .phone-img {
+    height: 530px;
+  }
+  #pic-Pianissimo {
+    height: 418px;
+    top: 56px;
+    right: 17px;
   }
 }
 
-@media (max-width:450px){
+@media (max-width:350px){
   .project-info {
-    width: 80%;
+    width: 82%;
   }
 }

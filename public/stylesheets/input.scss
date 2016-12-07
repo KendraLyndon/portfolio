@@ -38,7 +38,7 @@ header {
 .initials {
   height: 80px;
   width: 80px;
-  margin: 8px 45px 0 45px;
+  margin: 8px 45px 0 50px;
 }
 
 nav {
@@ -123,17 +123,28 @@ hr {
 
 @media (max-width:680px){
   nav > a:not(.initials-link) {
-    display: none;
+    font-size: 22px;
   }
   hr {
     width: 325px;
   }
   .sub-title {
-    font-size: 53px;
+    font-size: 60px;
+  }
+  .anchor {
+    padding-top: 85px;
   }
 }
 @media (max-height:500px){
   header {
-    height: 70px;
+    height: 65px;
+  }
+}
+@media (max-width: 600px){
+  nav > a:not(.initials-link) {
+    display: none;
+  }
+  .sub-title {
+    font-size: 50px;
   }
 }
