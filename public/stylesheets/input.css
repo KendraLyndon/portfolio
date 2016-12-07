@@ -154,7 +154,12 @@
     margin-right: 8px; }
 
 @media (max-width: 850px) {
+  .first {
+    flex-direction: column;
+    align-items: center; }
+
   .project-info {
+    margin-top: 15px;
     width: 90%;
     top: 2%;
     left: 2%; }

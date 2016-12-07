@@ -9,10 +9,10 @@ app.factory('ProjectService', function(){
         tech: 'Android Studio  |  Java  |  XML',
         liveLink: 'https://play.google.com/store/apps/details?id=com.kendralyndon.pianopractice&hl=en',
         gitHub: 'https://github.com/KendraLyndon/Pianissimo',
-        blurb: 'Available in the Google Play app store! '+
-               'Android App featuring an interactive piano. '+
-               'Imitates the natural tones of a grand piano and has a full '+
-               '88 keys scrollable within the app.'
+        blurb: 'Native app featuring an interactive piano, available in '+
+               'the Google Play store. '+
+               'Imitates the natural tones of a grand piano with a full '+
+               'scrollable keyboard.'
       },
       {
         name: 'CoffeeSnob',
