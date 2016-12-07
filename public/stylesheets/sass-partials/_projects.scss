@@ -23,34 +23,6 @@
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.title {
-  font-size: 30px;
-  color: $dark-grey;
-  font-family: $font-fancy;
-}
-
-.image-container {
-  position: relative;
-}
-
-.project-image {
-  height: 350px;
-  filter: brightness(0.8);
-}
-
-.first {
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  .project-info {
-    width: 350px;
-    margin-left: 15px;
-  }
-  .image-container {
-    order: -1;
-  }
-}
-
 .CoffeeSnob {
   .project-info {
     position: absolute;
@@ -67,12 +39,45 @@
   }
 }
 
+.title {
+  font-size: 30px;
+  color: $dark-grey;
+  font-family: $font-fancy;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image {
+  width: 635px;
+  filter: brightness(0.8);
+}
+
+.first {
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  .project-info {
+    width: 350px;
+    margin-left: 15px;
+  }
+  .image-container {
+    order: -1;
+  }
+}
+
 .phone-img {
   height: 600px;
 }
 
 #pic-Pianissimo {
   height: 475px;
+  width: auto;
   position: absolute;
   top: 63px;
   right: 18px;
@@ -116,16 +121,45 @@
     flex-direction: column;
     align-items: center;
   }
-  .project-info {
-    margin-top: 15px;
-    width: 90%;
-    top: 2%;
-    left: 2%;
-  }
   .project-div{
     margin-top: 40px;
   }
+
+}
+
+@media (max-width:670px){
   .project-image {
-    height: 250px;
+    width: 100%;
+  }
+  .project-div {
+    width: 90%;
+  }
+}
+
+@media (max-width:560px){
+  .title, .blurb, .tech {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .blurb {
+    font-size: 15px;
+  }
+  .tech {
+    font-size: 13px;
+  }
+  .project-link {
+    padding-left: 10px !important;
+  }
+  .project-info {
+    width: 84%;
+  }
+}
+
+@media (max-width:450px){
+  .project-info {
+    width: 80%;
   }
 }
