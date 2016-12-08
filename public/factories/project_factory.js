@@ -4,7 +4,7 @@ app.factory('ProjectService', function(){
       {
         name: 'Pianissimo',
         first: true,
-        images: ['../images/PianissimoSplash.jpg'],
+        images: ['../assets/images/PianissimoSplash.jpg'],
         video: 'https://www.youtube.com/embed/rJhstTNNCgM',
         tech: 'Android Studio | Java | XML',
         liveLink: 'https://play.google.com/store/apps/details?id=com.kendralyndon.pianopractice&hl=en',
@@ -16,7 +16,7 @@ app.factory('ProjectService', function(){
       },
       {
         name: 'CoffeeSnob',
-        images: ['../images/coffee-snob-scrnsht.png'],
+        images: ['../assets/images/coffee-snob-scrnsht.png'],
         video: null,
         tech: 'Node.js | Express | PostgreSQL | Google Maps',
         liveLink: 'http://coffeesnob-kl.herokuapp.com/',
@@ -26,7 +26,7 @@ app.factory('ProjectService', function(){
       },
       {
         name: 'Shoptacular',
-        images: ['../images/shoptacular-scrnsht.png'],
+        images: ['../assets/images/shoptacular-scrnsht.png'],
         video: null,
         tech: 'AngularJS | BootstrapCSS',
         liveLink: 'https://shopify-fdcbf.firebaseapp.com/',
