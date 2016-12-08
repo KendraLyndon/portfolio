@@ -4,3 +4,9 @@ $('a').click(function(){
     }, 500);
     return false;
 });
+
+var menuButton = document.getElementById('menu-button');
+
+$(menuButton).click(function() {
+  $('.menu-dropdown').toggleClass('closed');
+});

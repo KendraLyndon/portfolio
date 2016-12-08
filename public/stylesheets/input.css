@@ -229,15 +229,15 @@
   flex-direction: row;
   justify-content: space-around; }
 
-.list {
+.skills-list {
   font-size: 22px;
   font-family: "Syncopate", sans-serif;
   color: #A64D79; }
-  .list li {
+  .skills-list li {
     font-size: 18px;
     margin-bottom: 8px;
     list-style: none; }
-    .list li:first-child {
+    .skills-list li:first-child {
       margin-top: 20px; }
 
 @media (max-width: 700px) {
@@ -247,7 +247,7 @@
     justify-content: center;
     align-items: center; }
 
-  ul {
+  .skills-list {
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
@@ -295,28 +295,18 @@
 main {
   width: 100%; }
 
-header {
-  width: 100%;
-  height: 10vh;
-  background: #ffffff;
-  position: fixed;
-  top: 0;
-  z-index: 300;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
 .initials {
   height: 80px;
   width: 80px;
   margin: 8px 45px 0 50px; }
 
 nav {
+  height: 10vh;
   width: 100%;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  z-index: 300;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -332,6 +322,23 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+  nav #menu-button {
+    border: none;
+    background: white; }
+
+.menu-img {
+  display: none; }
+
+.slider {
+  overflow-y: hidden;
+  max-height: 140px;
+  /* approximate max height */
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1); }
+
+.slider.closed {
+  max-height: 0; }
 
 section {
   width: 100%;
@@ -395,8 +402,45 @@ footer {
   header {
     height: 65px; } }
 @media (max-width: 600px) {
-  nav > a:not(.initials-link) {
-    display: none; }
+  nav {
+    justify-content: space-between; }
+    nav a:not(.initials-link) {
+      display: none; }
+    nav .initials-link {
+      margin: 0; }
+
+  .initials {
+    margin: 8px 0 0 0; }
+
+  #menu-button {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px; }
+
+  .menu-img {
+    display: block;
+    background: none;
+    border: none;
+    background: white;
+    height: 40px;
+    width: 40px;
+    margin: 0; }
+
+  .menu-dropdown {
+    display: block;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    list-style: none;
+    text-align: right;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 250; }
+    .menu-dropdown li {
+      margin: 5px 10px 5px 10px;
+      font-size: 22px; }
+      .menu-dropdown li a {
+        text-decoration: none; }
 
   .sub-title {
     font-size: 50px; } }
