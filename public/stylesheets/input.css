@@ -334,6 +334,9 @@ nav {
 .menu-img {
   display: none; }
 
+.menu-dropdown {
+  display: none; }
+
 .slider {
   overflow-y: hidden;
   max-height: 140px;
