@@ -17,7 +17,7 @@
         <a ng-show="project.liveLink != null" class="project-link" href={{project.liveLink}}>
           project link
         </a>
-        <a class="project-link" href={{project.gitHub}}>
+        <a ng-show="project.gitHub != null" class="project-link" href={{project.gitHub}}>
           github repo
         </a>
       </div>

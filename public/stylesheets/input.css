@@ -96,6 +96,11 @@
   line-height: 1.2em;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); }
 
+.CodeMan .project-info {
+  position: absolute;
+  top: 16px;
+  left: 16px; }
+
 .CoffeeSnob .project-info {
   position: absolute;
   top: 16px;

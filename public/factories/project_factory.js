@@ -15,6 +15,18 @@ app.factory('ProjectService', function(){
                'scrollable keyboard.'
       },
       {
+        name: 'CodeMan',
+        first: false,
+        images: ['../assets/images/codeman.jpg'],
+        video: null,
+        tech: 'C# | Unity | Xcode',
+        liveLink: 'http://www.cheesegames.net/games/851/index.php?gameDataId=851',
+        gitHub: null,
+        blurb: 'A playful twist on the classic game Pac-Man where Code Man '+
+               'navigates through a maze, eating microchips '+
+               'while avoiding bugs.'
+      },
+      {
         name: 'CoffeeSnob',
         images: ['../assets/images/coffee-snob-scrnsht.png'],
         video: null,
